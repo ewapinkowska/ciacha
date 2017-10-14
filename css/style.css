@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+font-family: 'Lato', sans-serif;
+line-height: 1.25;
+
+}
+
+h1, h2, h3  {
+	text-transform: uppercase;
+	font-weight: 300;
+}
+header {
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	background-color: green; 
+	/*<!-- good idea to have it just in case the image doesn't load-->*/
+	background-image: url(../images/header-bg.jpg);
+	background-size: cover;
+	/*padding: 40px;*/
+	padding: 40px 0;
+	margin-bottom: 30px;
+}
+
+header ul {
+	padding: 0;
+	margin: 25px;
+}
+
+header li {
+	display: inline;
+}
+.container{
+width: 1000px;
+margin: 0 auto;
+}
+
+.sidebar {
+	width: 40%;
+	/*$0% of 1000px=400px */
+	float: left;
+	background-color: orange;
+	padding: 30px;
+
+}
+
+.recipes {
+	width: 60%;
+	float: right;
+}
+
+article {
+	width: 50%;
+	float: left;
+	padding: 0 20px;
+}
+
+article img {
+	width: 100%;
+}
+
+footer {
+	clear: both; 
+	/*allows you to make sure footer doesn't float aimlessly*/
+	text-align: center;
+	color: white;
+	background-color: black;
+	padding: 20px;
+
+	
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	border-bottom: 1px solid white;
+}
+
+.sidebar:hover {
+	background-color: yellow;
+}
+
+@media (max-width: 1000px) {
+	.sidebar {
+		display: none;
+	}
+	.recipes, .container {
+		width: 100%;
+	}
+}
+
+@media (max-width: 600px) {
+	article {
+		width: 100%;
+	}
+}
